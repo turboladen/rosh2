@@ -2,9 +2,9 @@ require 'socket'
 require_relative 'shell'
 
 class Rosh
-  # Object that represents a computer that Rosh commands are sent to. It's
-  # really mostly a container for getting at the functionality of each of Rosh's
-  # subsystems for that host.
+  # Object that represents a computer that Rosh commands are sent to. Like other
+  # core Rosh object types, it talks to the host through an internal adapter
+  # object.
   class Host
     # @param [String] host_name
     # @return [Boolean]
